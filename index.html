@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SAP</title>
+
+
+    <!--  Bootstrap css file  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="./vendor/magnific-popup.css">
+
+
+    <!--  Owl-carousel css file  -->
+    <link rel="stylesheet" href="./vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl.theme.default.min.css">
+
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .tabbed {
+            width: 800px;
+            margin: 50px auto;
+
+        }
+
+        .tabbed>input {
+            display: none;
+        }
+
+        .tabbed>label {
+            display: block;
+            float: left;
+            padding: 12px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+
+        .tabbed>label:hover,
+        .tabbed>input:checked+label {
+            background: #e91e73;
+        }
+
+        .tabs {
+            clear: both;
+            perspective: 599px;
+            margin-left: -50px;
+        }
+
+        .tabs>div {
+            width: 980px;
+            position: absolute;
+            border: 4px solid #e91e73;
+            padding: 10px 30px 40px;
+            line-height: 1.4em;
+            opacity: 0;
+            transform: rotateX(-20deg);
+            transform-origin: top center;
+            transition: opacity 0.3s, transform 1s;
+            z-index: 0;
+            border-radius: 50px;
+        }
+
+        #tab-nav-1:checked~.tabs>div:nth-of-type(1),
+        #tab-nav-2:checked~.tabs>div:nth-of-type(2),
+        #tab-nav-3:checked~.tabs>div:nth-of-type(3),
+        #tab-nav-4:checked~.tabs>div:nth-of-type(4),
+        #tab-nav-5:checked~.tabs>div:nth-of-type(5) {
+            transform: rotateX(0);
+            opacity: 1;
+            z-index: 1;
+
+        }
+
+        /*-------------------*/
+
+        #circleBar {
+            margin-top: 180px;
+            text-align: center;
+            font-family: tahoma;
+        }
+
+        #circleBar .round {
+            min-height: 255px;
+            margin-top: 30px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        #circleBar .round strong {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            transform: translate(-50%);
+            font-size: 40px;
+            color: #212121;
+            font-weight: 100;
+        }
+
+        #circleBar span {
+            display: block;
+            color: #999;
+            font-size: 17px;
+            margin-top: 10px;
+        }
+
+        #circleBar span i {
+            color: #ff5c5c;
+            font-size: 22px;
+            margin-right: 7px;
+        }
+
+        section button:hover {
+            background-color: #ff5c5c;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!--  ======================= Start Header Area ============================== -->
+
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#intro">Intro <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#career">Objective</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#technical">Technical skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#circleBar">Skill progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#social">Social</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--  ======================= End Header Area ============================== -->
+
+    <!--  ======================= Start Main Area ================================ -->
+    <main class="site-main">
+
+
+        <!--  ======================= Start Banner Area =======================  -->
+        <section class="site-banner">
+            <div class="container" id="intro">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hey</h3>
+                        <h1 class="title-text text-uppercase">I am Saphal</h1>
+                        <h4 class="title-text text-uppercase">Implementation Engineer</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+
+                                <a href="https://drive.google.com/open?id=1yA-N6-6pYn5h5cghUxbp40tCMVpJ6Ogb" target="_blank"> <button type="button" class="btn button secondary-button text-uppercase">Get cv</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="./img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  ======================= End Banner Area =======================  -->
+
+        <!--  ========================= Career objective==========================  -->
+
+        <section class="about-area" id="career">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>My</span>
+                            <span>Career</span>
+                            <span>Objective</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+
+                            </p>
+                            <p class="para">
+                                To become a part of a challenging organization where I can apply inherited skills for my professional growth in parallel
+                                to the organization to achieve flying colors.
+                            </p>
+
+                        </div>
+                        <a href="https://drive.google.com/open?id=1yA-N6-6pYn5h5cghUxbp40tCMVpJ6Ogb" target="_blank"> <button type="button" class="btn button primary-button text-uppercase">Download cv</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ========================= End About Area ==========================  -->
+
+        <!--  ====================== Start Services Area =============================  -->
+
+        <section class="services-area" id="technical">
+            <div class="container">
+       
+                <div class="container services-list">
+                   <h1 align="center">Technical Skill Set</h1>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s1.png" alt="Services-1">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">ux/ui desing</h5>
+                                    <p class="card-text text-secondary">
+                                        HTML5 , CSS3 , JAVASCRIPT , BOOTSTRAP , JQUERY
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s2.png" alt="Services-2">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">DATABASE</h5>
+                                    <p class="card-text text-secondary">
+                                        MY SQL, PHP , ORACLE , NODE jS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s3.png" alt="Services-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">BACKEND</h5>
+                                    <p class="card-text text-secondary">
+                                        CORE JAVA , JDBC , SERVLETS , JSP , SPRINGS , HIBERNATE , SWINGS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <section id="circleBar">
+<br><br>
+                <h1> SKILL SET PROGRESS </h1>
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="round" data-value="0.87" data-size="200" data-thickness="12">
+                                <strong></strong>
+                                <span><i class="fa fa-laptop"></i>
+                                    FRONT-END</span>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="round" data-value="0.85" data-size="200" data-thickness="12">
+                                <strong></strong>
+                                <span><i class="fa fa-laptop"></i>
+                                    JAVA</span>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="round" data-value="0.70" data-size="200" data-thickness="12">
+                                <strong></strong>
+                                <span><i class="fa fa-laptop"></i>
+                                    javscript </span>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="round" data-value="0.80" data-size="200" data-thickness="12">
+                                <strong></strong>
+                                <span><i class="fa fa-laptop"></i>
+                                    SQL </span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--  <button class="btn" onClick="circle('.round')">REFRESH</button>-->
+            </section>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+            <script>
+                function circle(el) {
+                    $(el).circleProgress({
+                            fill: {
+                                color: '#ff5c5c'
+                            }
+                        })
+                        .on('circle-animation-progress', function(event, progress, stepValue) {
+                            $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2) + '%');
+                        });
+                };
+                circle('.round');
+
+            </script>
+            <br><br><br><br>
+            <section id="about">
+               <br><br>
+                <h1 align="center"> About Me </h1>
+                <div class="tabbed">
+
+                    <input type="radio" name="tabs" id="tab-nav-1" checked>
+                    <label for="tab-nav-1">Education</label>
+
+                    <input type="radio" name="tabs" id="tab-nav-2">
+                    <label for="tab-nav-2">Project</label>
+
+                    <input type="radio" name="tabs" id="tab-nav-3">
+                    <label for="tab-nav-3">Academic Achievements</label>
+
+                    <input type="radio" name="tabs" id="tab-nav-4">
+                    <label for="tab-nav-4">Strengths</label>
+
+                    <input type="radio" name="tabs" id="tab-nav-5">
+                    <label for="tab-nav-5">Personal Details</label>
+
+
+                    <div class="tabs">
+
+
+                        <div>
+
+
+                            <div class="w3-container">
+
+                                <table class="w3-table w3-bordered">
+                                    <tr>
+                                        <th>Education</th>
+                                        <th>Year of passing</th>
+                                        <th>Institute/School</th>
+                                        <th>University/Board</th>
+                                        <th>Percentage/CGPA</th>
+                                    </tr>
+                                    <tr>
+                                        <td>B.Tech(ECE)</td>
+                                        <td>2019</td>
+                                        <td>Madanapalle Institute of Technology</td>
+                                        <td>JNTU-A</td>
+                                        <td>7.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Class XII</td>
+                                        <td>2015</td>
+                                        <td>Narayana J.R College</td>
+                                        <td>Board of Intermediate
+                                            Education, Andhra
+                                            Pradesh</td>
+                                        <td>88.87%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Class X</td>
+                                        <td>2013</td>
+                                        <td>Keshava Reddy Concept School</td>
+                                        <td>Secondary School
+                                            Certificate (S.S.C)</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <p><b>PROJECT NAME :</b> BANK application<br>
+                                <b>TECHNOLOGIES :</b> JAVA,SERVLETS,XML,JSP,JDBC,HTML,SQL<br>
+                                <b>FUNCTIONING : </b>Creating a dynamic web module on<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Accessing the database<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Register and Login modules<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Transfer the money module<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Reset and Forgot password modules<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Emailing module<br>
+
+                                <b>DESCRIPTION : </b>The user can register and login on the website. The user can experience all the functionalities
+                                that bank website has, Even he forgets his/her password, he has the option to change
+                                through email functionality.<br>
+                                <b>ROLE :</b> Developer and Front-end UI Designer</p>
+
+                        </div>
+
+                        <div>
+
+                            <p>
+
+                                 Presented paper on Block-Chain Technology<br><br>
+                                 Designed poster on Cryptography.<br><br>
+                                 Won Technical quiz in college fest.<br><br>
+                                 committee member of student E-cell at my college.<br><br>
+                            </p>
+
+
+                        </div>
+
+                        <div>
+                            <p>
+
+                                 Learning new things<br><br>
+                                 Good Communication Skills<br><br>
+                                 Be a coordinator<br><br>
+                                 Good motivator<br><br>
+                                 Taking responsibility<br><br>
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <p> Date of Birth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 10th AUG 1997.<br><br>
+                                 Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :Male<br><br>
+                                 Marital Status &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :Single<br><br>
+                                 Hobbies &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Gaming, Organizing Events, Planning<br><br>
+                                 Languages known &nbsp;&nbsp;: English, Telugu.</p><br><br>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </section>
+            <br><br><br> <br><br><br> <br><br><br>
+        </section>
+
+
+
+
+    </main>
+    <!--  ======================= End Main Area ================================ -->
+    <section id="social">
+        <footer class="footer-area">
+            <div class="container">
+                <div class="">
+
+                    <div class="social text-center">
+                        <h5 class="text-uppercase">Follow me</h5>
+                        <a href="https://www.facebook.com/saisaphal" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/unseen_sap/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/saphal-vecham-959999135/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/SaphalVecham" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="copyrights text-center">
+                        <p class="para">
+                            Copyright ©2019 All rights reserved |
+                            <a href="#"><span style="color: var(--primary-color);">Saphal</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
+
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope.min.js"></script>
+
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/jquery.magnific-popup.min.js"></script>
+
+    <!--  Owl-carousel js file  -->
+    <script src="./vendor/owl.carousel.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+
+   <script type="text/javascript">
+    $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+        var scroll;
+
+        if($(window).scrollTop()==0){
+            scroll =  ($target.offset().top) - 160
+        }else{
+            scroll =  ($target.offset().top) - 60
+        }
+        $('html, body').stop().animate({
+            'scrollTop': scroll
+        }, 900, 'swing', function () {
+            //window.location.hash = target;
+        });
+    });
+});
+</script>
+</body>
+
+</html>
